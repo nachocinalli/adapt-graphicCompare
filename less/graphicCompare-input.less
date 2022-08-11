@@ -1,0 +1,47 @@
+.graphiccompare {
+  @thumb-size: 60px;
+  @thumb-radius: 50%;
+  @thumb-border-size: 2px;
+  @focus-width: @thumb-border-size;
+  @thumb-background-image: url('data:image/svg+xml;utf8,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M20 20 10 30l10 10M40 20l10 10-10 10"/></svg>');
+  input {
+    cursor: col-resize;
+    margin: 0 calc(@thumb-size / -2);
+    width: calc(100% + @thumb-size);
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+  }
+  ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: @disabled;
+    background-image: @thumb-background-image;
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: @thumb-radius;
+    border: @thumb-border-size @disabled solid;
+    color: @disabled;
+    width: @thumb-size;
+    height: @thumb-size;
+  }
+  ::-moz-range-thumb {
+    background-color: @disabled;
+    background-image: @thumb-background-image;
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: @thumb-radius;
+    border: @thumb-border-size @disabled solid;
+    color: @disabled;
+    width: @thumb-size;
+    height: @thumb-size;
+  }
+  input:focus::-moz-range-thumb {
+    box-shadow: 0px 0px 0px @focus-width @item-color-selected;
+  }
+  input:focus::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px @focus-width @item-color-selected;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "adapt-graphicCompare",
+  "version": "1.0.0",
+  "framework": ">=5.19.1",
+  "homepage": "https://github.com/nachocinalli/adapt-graphicCompare",
+  "bugs": "https://github.com/nachocinalli/adapt-graphicCompare/issues",
+  "component": "graphicCompare",
+  "targetAttribute": "_graphicCompare",
+  "displayName": "Graphic Compare",
+  "description": "The graphic compare component allows for controlling the visibility of the two images.",
+  "main": "/js/adapt-graphicCompare.js",
+  "keywords": ["adapt-plugin", "adapt-component"],
+  "license": "GPL-3.0"
+}

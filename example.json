@@ -1,0 +1,23 @@
+{
+  "_id": "c-05",
+  "_parentId": "b-05",
+  "_type": "component",
+  "_component": "graphicCompare",
+  "_classes": "",
+  "_layout": "full",
+  "title": "Graphic compare component",
+  "displayTitle": "Graphic compare component",
+  "body": "This is the body text",
+  "instruction": "This is the instruction text",
+  "_graphic1": {
+    "src": "course/en/images/graphic1.png",
+    "alt": ""
+  },
+  "_graphic2": {
+    "src": "course/en/images/graphic2.png",
+    "alt": ""
+  },
+  "_pageLevelProgress": {
+    "_isEnabled": true
+  }
+}

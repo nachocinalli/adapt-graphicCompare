@@ -1,0 +1,27 @@
+.graphiccompare {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  label {
+    align-items: stretch;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  &__image-2 {
+    border-right: 2px solid @item-color-selected;
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "$anchor": "graphicCompare-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$merge": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "properties": {
+        "_supportedLayout": {
+          "type": "string",
+          "title": "Supported layout",
+          "default": "both",
+          "enum": ["full-width", "half-width", "both"],
+          "_adapt": {
+            "editorOnly": true
+          }
+        },
+        "instruction": {
+          "type": "string",
+          "title": "Instruction",
+          "default": "",
+          "_adapt": {
+            "translatable": true
+          }
+        },
+        "_graphic1": {
+          "type": "object",
+          "title": "Graphic",
+          "default": {},
+          "required": ["src"],
+          "properties": {
+            "alt": {
+              "type": "string",
+              "title": "Alternative text",
+              "description": "A description of the image",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "src": {
+              "type": "string",
+              "isObjectId": true,
+              "title": "Src",
+              "description": "The source of the image",
+              "_backboneForms": {
+                "type": "Asset",
+                "media": "image"
+              }
+            }
+          }
+        },
+        "_graphic2": {
+          "type": "object",
+          "title": "Graphic",
+          "default": {},
+          "required": ["src"],
+          "properties": {
+            "alt": {
+              "type": "string",
+              "title": "Alternative text",
+              "description": "A description of the image",
+              "default": "",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "src": {
+              "type": "string",
+              "isObjectId": true,
+              "title": "Src",
+              "description": "The source of the image",
+              "_backboneForms": {
+                "type": "Asset",
+                "media": "image"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
