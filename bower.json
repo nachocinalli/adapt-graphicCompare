@@ -1,5 +1,9 @@
 {
   "name": "adapt-graphicCompare",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nachocinalli/adapt-graphicCompare.git"
+  },
   "version": "1.0.0",
   "framework": ">=5.19.1",
   "homepage": "https://github.com/nachocinalli/adapt-graphicCompare",
