@@ -38,6 +38,20 @@
       "help": "This is the instruction text",
       "translatable": true
     },
+    "_initialValue": {
+      "type": "string",
+      "required": true,
+      "enum": ["left", "right", "none"],
+      "default": "none",
+      "title": "Initial Value",
+      "inputType": {
+        "type": "Select",
+        "options": ["left", "right", "none"]
+      },
+      "validators": ["required"],
+      "help": "This is the initial value of the component. If set to 'none' the slider will be in the middle position."
+
+    },
    "_graphic1": {
       "type": "object",
       "required": true,

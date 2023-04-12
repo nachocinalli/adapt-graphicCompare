@@ -25,6 +25,14 @@
             "translatable": true
           }
         },
+        "_initialValue": {
+          "type": "string",
+          "title": "Initial value",
+          "default": "none",
+          "enum": ["left", "right", "none"],
+          "description": "This is the initial value of the component. If set to 'none' the slider will be in the middle position.",
+          "_backboneForms": "Select"
+        },
         "_graphic1": {
           "type": "object",
           "title": "Graphic",

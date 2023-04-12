@@ -4,6 +4,9 @@ class GraphicCompareView extends ComponentView {
   preRender() {
     this.onChange = this.onChange.bind(this);
 
+    const initialValue = this.model.get('_initialValue');
+    this.model.set('_value', initialValue === 'left' ? 0 : initialValue === 'right' ? 100 : 50);
+
   }
 
   postRender() {

@@ -9,6 +9,7 @@
   "displayTitle": "Graphic compare component",
   "body": "This is the body text",
   "instruction": "This is the instruction text",
+  "_initialValue": "left",
   "_graphic1": {
     "src": "course/en/images/graphic1.png",
     "alt": ""
