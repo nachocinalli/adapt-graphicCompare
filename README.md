@@ -1,6 +1,6 @@
 # adapt-graphicCompare
 
-**graphicCompare** is a *presentation component* that allows for controlling the visibility of the two images.
+**graphicCompare** is a *presentation component* that allows you to control the visibility of two images.
 
 You can see it [here](https://adaptlearning-no-core.web.app/#/id/po-75)
 
